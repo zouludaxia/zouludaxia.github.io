@@ -287,19 +287,9 @@
 <li>主题更换以及文章发布</li>
 </ol>
 <h1 id="开始吧！"><a href="#开始吧！" class="headerlink" title="开始吧！"></a>开始吧！</h1><hr>
-<h3 id="1-GitHub的注册与git安装"><a href="#1-GitHub的注册与git安装" class="headerlink" title="1.GitHub的注册与git安装"></a>1.GitHub的注册与git安装</h3><p>首先登陆GitHub官网<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击绿绿的那个“sign up for GitHub”，输入信息，选择免费的plan。出现问卷，不想填直接点下面的“skip this step”跳过就好了。（英文看不懂就用谷歌浏览器右键自动翻译，超方便）<br>最后出现以下页面，就可以开始邮箱验证了。<br><img src="https://s1.ax1x.com/2020/04/11/GHGPOS.jpg" alt="enter description here"><br>然后进入qq邮箱里的验证邮件，点击蓝色的Verify email address按钮,又进入了GitHub登录页面（网速卡等一会就好了）。登录后又进入验证码界面，输入验证码（已经发到你的qq邮箱里了）。随后进入创建新仓库的界面就意味着已经注册成功了。<br><br><br>接下来安装git，进入git官网<a href="https://git-scm.com/" target="_blank" rel="noopener">git官网</a>，点击download下载，选择合适的系统，开始下载。下载成功后打开安装包，点next，然后选择安装位置进入下一步，勾选第一二行，表示在桌面创建快捷方式。其余保持默认。<br><img src="https://s1.ax1x.com/2020/04/11/GHUts0.jpg" alt="enter description here"><br>然后一路默认下一步，直至安装完成。<br><img src="https://s1.ax1x.com/2020/04/11/GHaNpd.png" alt="enter description here"><br>右键能出现Git Bash here即是安装成功了。在不同目录点击下右键-git bash here进入的是不同目录的配置（和Kali Linux里的终端是一个道理），之后做的时候一定要看好目录哦。</p>
-<h3 id="2-git与GitHub的绑定以及文件提交法"><a href="#2-git与GitHub的绑定以及文件提交法" class="headerlink" title="2. git与GitHub的绑定以及文件提交法"></a>2. git与GitHub的绑定以及文件提交法</h3><p>打开gitbash输入 ssh 命令，查看本机是否安装 SSH：<br><img src="https://s1.ax1x.com/2020/04/24/JDjD4s.png" alt="enter description here"><br>如此即为已安装， 然后输入 ssh-keygen -t rsa 命令，表示我们指定 RSA 算法生成密钥，然后敲四次回车键，之后就就会在C:/Users/ASUS/.ssh下生成两个文件（win10），分别为秘钥 id_rsa 和公钥 id_rsa.pub.<br>输入下面三条命令，可查看到公钥文件里的内容。</p>
-<blockquote>
-<p>$ cd ~/.ssh<br>$ ls<br>$ cat id_rsa.pub</p>
-</blockquote>
-<p>点开github右上角头像中的“Settings”，再点击 SSH and GPG keys。点击绿色的“ New SSH key”新建，将公钥右键复制粘贴到新建的ssh key中（标题空着无所谓），点击“add this key”保存。<br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:git@github.com">git@github.com</a> 进行检验。第一次会出现：<br><img src="https://s1.ax1x.com/2020/04/24/JDzZ3n.jpg" alt="enter description here"><br>填“yes”，出现以下情形即为成功了。<br><img src="https://s1.ax1x.com/2020/04/24/JDz0ED.png" alt="enter description here"><br>至此我们就完成了git与GitHub的绑定。</p>
-<p>接下来介绍几个博客中常用到爆的命令，稍微记下这几个就够了哦：<br>1.克隆到本地</p>
-<blockquote>
-<p>git clone …</p>
-</blockquote>
-<p>git clone 后接要克隆的链接。在github存储库中点击绿色的 <strong><em>Clone or download</em></strong>，可以拷贝链接。<br><img src="https://s1.ax1x.com/2020/04/24/Jr9qKI.png" alt="enter description here"></p>
-<p>2.</p>
-
+        
+          <a class="article-more-a" href="/2020/04/24/%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/#more">more >></a>
+        
       
 
       
@@ -370,17 +360,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>劝妹妹读书有感。</p>
+<p>劝妹妹读书居然有感。</p>
 <p>下午劝妹妹趁最后一次专升本的机会好好学习一把，经过一场持久的辩论，我愈发地觉得自己漏洞百出，内心还跳出了一万句反驳自己的话。不禁思考，所谓“拓宽生命的宽度”到底有个什么用？？</p>
-<p>她前段时间决计要努力一把参加专升本考试（过去因为特殊原因没有在瑞安读书，后来到天津找了个中专学校读了），我内心也超级支持，谁不希望看到身边的人逆袭的故事呢？我又不由得顺着自己的惯性思维想了下去，说不定她在专升本成功后，又会考研去更好的地方大学呢（某种意义上就体验了我难以体验的生活），说不定还能继续学习，成为一个很有文化的人呢。那样我就多了个可以经常一起探讨专业外问题的人，想想就很nice……</p>
-<p>不过，以上只是我的一厢情愿。这几天，她已经没在学习了，原因是跟我一样本来就不太喜欢社会交往的她突然想到，学这些东西不都是为了以后出门工作的吗，而她明明想一直家里蹲，做一名靠接稿过活最多偶尔到国外看看喜欢的人足够了的画师（之前在学校学的是动漫），学那些东西有什么用？其实，我初三以前也总是萌生这种想法，现在看以前的自己，自然会蛮不讲理地觉得幼稚。但我的良知终究还是没允许我用一副老油条的嘴脸来教育别人，又只能抛出我习惯的思维：“插画师不也得有点文化的吗？”</p>
-<p>她说不用。（我怎么就没有勇气说出一个像这样绝对的观点呢。生活又不是写文章又不是辩论赛，想说啥就说啥呗。）最要命的是我想了想好像还真有可能完全不用，毕竟有一部分网络主播甚至是有的明星好像还真没什么文化，单纯把自己心里那点私密的想法展示出来好像还真有人喜欢，都0202年了，不太懂的东西我也不好随便排斥。<br>于是我一时竟真想不到要说什么，只能搬出我的各种陈词滥调外加玄学屁话，什么学习能让人看见另一个世界另一种生活，什么生物精巧、数学美丽，什么天文地理外国文化呀……这是人说的话？我还是个人？？或许，是因为我在看了奇葩说后又一直在听道长的一千零一夜，现在大脑一开机就是：“不保证成功，不一定有用，知识只是点亮世界的明灯……”又或者是为犬儒精神所感召，感觉自己就是古代的“士”，感觉“天下就是己任”，我竟感觉自己这么高尚？？不太清楚这种作为一种风潮的“高尚”能持续多久，直到疫情结束？直到再次遭遇现实毒打的时候？<br>小学初中的时候常听到，“不能延长生命的长度，但可以拓宽生命的宽度”之类的话，学知识也确实直接拓宽了生命的宽度。但连自己都忍不住要杠的我又在思考了，拓宽了又有何用？</p>
-<p>她那段时间常想活着有什么意义，我有的时候也会想做人类到底有什么意义，好像有了那么点共同话题，前天晚上餐桌上两台笔记本，我一边看视频一边记笔记，她一边画画一边补甄嬛传。最终我们居然达成了“411共识”，就是真的好想变成一只猫猫啊，变成地板也行，或许我还想变成有三维记忆的四维生物，无处不在不会消亡，随时还能转头看一看我想看的人所存在的那些时间片段（听起来好像是升仙了。。）</p>
-<p>前段时间突然开始关注胡歌，找到了他在朗读者上读哈姆雷特经典独白的视频，发现莎士比亚的有一段话跟我小时候对死后的想象真的过分相似，“死了，什么都没了……睡着了也许会做梦，会做些什么梦？那不能不使我们顾虑。”如今用语言来描述，大概就是没有成为以上东西，而是成为了一颗鸽子蛋大钻石，在沙漠里睡个几万年，没有任何意识，这个样子，每次一想到我就脊背发凉，可见我根本不想放弃我作为人类的意识以及思考能力啊，从小到大都不想，天生就不想，这又是什么原因呢，意识和思维的存在到底有什么意义呢？<br>讲哲学有点超出了我的能力范围。。以后想到了在说吧。。<br>总之，拓宽生命的宽度，就是把意识变成了“意识PLUS”，把思维变成了“思维Enhanced Edition”，其意义就在于增多意识和思维的意义。<br>假如认同存在主义的存在先于本质等观点，那么意识和思维就没有意义，于是拓宽生命的宽度也就毫无意义，一切只是基于自己的喜好为了自己的欢愉罢了。</p>
-<p>害，哲学部分先收收吧，这样一想可以发现，没有功利的努力学习不过是图个开心嘛，但对于对知识并不感冒的人来讲，学习甚至会产生痛苦。从这个角度来讲，我好像能够赞成妹妹不学习。在这个知识焦虑、每个人都在疯狂地学习的年代，什么都要学，“一个都跑不了”的年代，未来或许真的属于“少学习的人“吧（突然讲这个好像有点反人类，以后再谈吧。）</p>
-<p>不过，在正式提出“别学习了”这个建议之前，还想再提最后一嘴，有句网红诗句叫：“愿我如星君如月，夜夜流光相皎洁。”有人说这就是闷骚的文人所幻想出的女舔狗形象，但真正迷上一个厉害的人可能真的就像这样吧。每次努力学习的时候都会开启一段钟情妄想，就如仓央嘉措诗里那样，单纯地期待着有天能够在途中相遇。就好像某些女生喜欢一个大明星，就想去做他的经纪人一样，虽然这样的强目的性让人有点amazing&amp;细思恐，但也未尝不是在执着地追逐自己喜欢的东西呢，又未尝不浪漫呢。如果人生真的就是开心就好了，那不如去“贴靠”整个世界上最让你崇拜最能让你开心的人，或者慢慢去发现最能让你开心崇拜的人，最终就得到了能让你得到较长久快乐的钟情幻想，说不定，有天还能“在途中相见”呢，不是比所谓靠“拓宽生命的宽度”取悦自己来的更直接吗？相比“宽度”只是一部分高尚人的娱乐工具，心爱之物才更具有普适性（不行，我太喜欢王者荣耀里西施这个英雄了）😂。</p>
-<p>既然生本身就没有什么意义，那么为“所善”赴九死也自然无悔。</p>
-
+        
+          <a class="article-more-a" href="/2020/04/13/%E2%80%9C%E6%8B%93%E5%AE%BD%E7%94%9F%E5%91%BD%E7%9A%84%E5%AE%BD%E5%BA%A6%E2%80%9D%E7%A9%B6%E7%AB%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F%EF%BC%9F/#more">more >></a>
+        
       
 
       
@@ -404,95 +388,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/04/13/%E2%80%9C%E6%8B%93%E5%AE%BD%E7%94%9F%E5%91%BD%E7%9A%84%E5%AE%BD%E5%BA%A6%E2%80%9D%E7%A9%B6%E7%AB%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F%EF%BC%9F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<span id="busuanzi_container_page_pv">
-   本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-  
-    <article id="post-大侠一站式——电脑白痴的Hexo博客搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/11/%E5%A4%A7%E4%BE%A0%E4%B8%80%E7%AB%99%E5%BC%8F%E2%80%94%E2%80%94%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">大侠一站式——电脑白痴的Hexo博客搭建</a>
-    </h1>
-  
-
-<!--显示阅读次数-->
-
-<!--显示阅读次数完毕-->
-        
-        <a href="/2020/04/11/%E5%A4%A7%E4%BE%A0%E4%B8%80%E7%AB%99%E5%BC%8F%E2%80%94%E2%80%94%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2020-04-11T06:17:37.168Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>   电脑白痴 人文关怀 作者菜但超热情 持续更新</p>
-<hr>
-<p>最近发现学校里有些厉害的人都在在坚持写技术博客，平时酷爱写杂感的大侠我突然觉得，建一个个人博客，拥有一个属于自己的小树洞，存存杂感放放学习笔记是多么好的一件事情。身为大侠，自然说干就干。</p>
-<p>大侠选择的是github的博客，原因是它定制比较简单，用markdown写博文也比较方便。虽然想通过百度搜索到自己的主页比较困难(￣_￣|||)，但刚好适合我这样安静的美男子以及自闭仔。<br>看了一些“纯小白”的教程，发现纯小白原来是要熟练掌握Linux系统操作命令的【手动狗头】，那么，我们非计算机专业或者计算机课程到现在还没有开始上的电脑白痴，就不配拥有自己的小窝了？<br>不，白痴也有人爱，刚被爱过的大侠现在就来给大家分享最最简单最详细的github+hexo博客搭建攻略。（前面搭建博客的时候都是看着知乎小哥枫叶的文章做的，真的太nice了。）</p>
-<h1 id="大致步骤"><a href="#大致步骤" class="headerlink" title="大致步骤"></a>大致步骤</h1><hr>
-<ol>
-<li>GitHub注册与git安装</li>
-<li>git与GitHub的绑定以及文件提交法</li>
-<li>安装node.js和Hexo框架</li>
-<li>域名的购买和解析</li>
-<li>主题更换以及文章发布</li>
-</ol>
-<h1 id="开始吧！"><a href="#开始吧！" class="headerlink" title="开始吧！"></a>开始吧！</h1><hr>
-<h3 id="1-GitHub的注册与git安装"><a href="#1-GitHub的注册与git安装" class="headerlink" title="1.GitHub的注册与git安装"></a>1.GitHub的注册与git安装</h3><p>首先登陆GitHub官网<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击绿绿的那个“sign up for GitHub”，输入信息，选择免费的plan。出现问卷，不想填直接点下面的“skip this step”跳过就好了。（英文看不懂就用谷歌浏览器右键自动翻译，超方便）<br>最后出现以下页面，就可以开始邮箱验证了。<br><img src="https://s1.ax1x.com/2020/04/11/GHGPOS.jpg" alt="enter description here"><br>然后进入qq邮箱里的验证邮件，点击蓝色的Verify email address按钮,又进入了GitHub登录页面（网速卡等一会就好了）。登录后又进入验证码界面，输入验证码（已经发到你的qq邮箱里了）。随后进入创建新仓库的界面就意味着已经注册成功了。<br><br><br>接下来安装git，进入git官网<a href="https://git-scm.com/" target="_blank" rel="noopener">git官网</a>，点击download下载，选择合适的系统，开始下载。下载成功后打开安装包，点next，然后选择安装位置进入下一步，勾选第一二行，表示在桌面创建快捷方式。其余保持默认。<br><img src="https://s1.ax1x.com/2020/04/11/GHUts0.jpg" alt="enter description here"><br>然后一路默认下一步，直至安装完成。<br><img src="https://s1.ax1x.com/2020/04/11/GHaNpd.png" alt="enter description here"><br>右键能出现Git Bash here即是安装成功了。在不同目录点击下右键-git bash here进入的是不同目录的配置（和Kali Linux里的终端是一个道理），之后做的时候一定要看好目录哦。</p>
-<h3 id="2-git与GitHub的绑定以及文件提交法"><a href="#2-git与GitHub的绑定以及文件提交法" class="headerlink" title="2. git与GitHub的绑定以及文件提交法"></a>2. git与GitHub的绑定以及文件提交法</h3><p>打开gitbash输入 ssh 命令，查看本机是否安装 SSH：<br><img src="https://s1.ax1x.com/2020/04/24/JDjD4s.png" alt="enter description here"><br>如此即为已安装， 然后输入 ssh-keygen -t rsa 命令，表示我们指定 RSA 算法生成密钥，然后敲四次回车键，之后就就会在C:/Users/ASUS/.ssh下生成两个文件（win10），分别为秘钥 id_rsa 和公钥 id_rsa.pub.<br>输入下面三条命令，可查看到公钥文件里的内容。</p>
-<blockquote>
-<p>$ cd ~/.ssh<br>$ ls<br>$ cat id_rsa.pub</p>
-</blockquote>
-<p>点开github右上角头像中的“Settings”，再点击 SSH and GPG keys。点击绿色的“ New SSH key”新建，将公钥右键复制粘贴到新建的ssh key中（标题空着无所谓），点击“add this key”保存。<br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:git@github.com">git@github.com</a> 进行检验。第一次会出现：<br><img src="https://s1.ax1x.com/2020/04/24/JDzZ3n.jpg" alt="enter description here"><br>填“yes”，出现以下情形即为成功了。<br><img src="https://s1.ax1x.com/2020/04/24/JDz0ED.png" alt="enter description here"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/11/%E5%A4%A7%E4%BE%A0%E4%B8%80%E7%AB%99%E5%BC%8F%E2%80%94%E2%80%94%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">展开全文 >></a>
         </p>
       
 
