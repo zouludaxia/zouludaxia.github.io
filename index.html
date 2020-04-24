@@ -156,6 +156,95 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-电脑白痴的Hexo博客搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/24/%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">电脑白痴的Hexo博客搭建</a>
+    </h1>
+  
+
+<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        <a href="/2020/04/24/%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2020-04-24T13:24:00.534Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-24</time>
+</a>
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>   电脑白痴 人文关怀 作者菜但超热情 持续更新</p>
+<hr>
+<p>最近发现学校里有些厉害的人都在在坚持写技术博客，平时酷爱写杂感的大侠我突然觉得，建一个个人博客，拥有一个属于自己的小树洞，存存杂感放放学习笔记是多么好的一件事情。身为大侠，自然说干就干。</p>
+<p>大侠选择的是github的博客，原因是它定制比较简单，用markdown写博文也比较方便。虽然想通过百度搜索到自己的主页比较困难(￣_￣|||)，但刚好适合我这样安静的美男子以及自闭仔。<br>看了一些“纯小白”的教程，发现纯小白原来是要熟练掌握Linux系统操作命令的【手动狗头】，那么，我们非计算机专业或者计算机课程到现在还没有开始上的电脑白痴，就不配拥有自己的小窝了？<br>不，白痴也有人爱，刚被爱过的大侠现在就来给大家分享最最简单最详细的github+hexo博客搭建攻略。（前面搭建博客的时候都是看着知乎小哥枫叶的文章做的，真的太nice了。）</p>
+<h1 id="大致步骤"><a href="#大致步骤" class="headerlink" title="大致步骤"></a>大致步骤</h1><hr>
+<ol>
+<li>GitHub注册与git安装</li>
+<li>git与GitHub的绑定以及文件提交法</li>
+<li>安装node.js和Hexo框架</li>
+<li>域名的购买和解析</li>
+<li>主题更换以及文章发布</li>
+</ol>
+<h1 id="开始吧！"><a href="#开始吧！" class="headerlink" title="开始吧！"></a>开始吧！</h1><hr>
+<h3 id="1-GitHub的注册与git安装"><a href="#1-GitHub的注册与git安装" class="headerlink" title="1.GitHub的注册与git安装"></a>1.GitHub的注册与git安装</h3><p>首先登陆GitHub官网<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击绿绿的那个“sign up for GitHub”，输入信息，选择免费的plan。出现问卷，不想填直接点下面的“skip this step”跳过就好了。（英文看不懂就用谷歌浏览器右键自动翻译，超方便）<br>最后出现以下页面，就可以开始邮箱验证了。<br><img src="https://s1.ax1x.com/2020/04/11/GHGPOS.jpg" alt="enter description here"><br>然后进入qq邮箱里的验证邮件，点击蓝色的Verify email address按钮,又进入了GitHub登录页面（网速卡等一会就好了）。登录后又进入验证码界面，输入验证码（已经发到你的qq邮箱里了）。随后进入创建新仓库的界面就意味着已经注册成功了。<br><br><br>接下来安装git，进入git官网<a href="https://git-scm.com/" target="_blank" rel="noopener">git官网</a>，点击download下载，选择合适的系统，开始下载。下载成功后打开安装包，点next，然后选择安装位置进入下一步，勾选第一二行，表示在桌面创建快捷方式。其余保持默认。<br><img src="https://s1.ax1x.com/2020/04/11/GHUts0.jpg" alt="enter description here"><br>然后一路默认下一步，直至安装完成。<br><img src="https://s1.ax1x.com/2020/04/11/GHaNpd.png" alt="enter description here"><br>右键能出现Git Bash here即是安装成功了。在不同目录点击下右键-git bash here进入的是不同目录的配置（和Kali Linux里的终端是一个道理），之后做的时候一定要看好目录哦。</p>
+<h3 id="2-git与GitHub的绑定以及文件提交法"><a href="#2-git与GitHub的绑定以及文件提交法" class="headerlink" title="2. git与GitHub的绑定以及文件提交法"></a>2. git与GitHub的绑定以及文件提交法</h3><p>打开gitbash输入 ssh 命令，查看本机是否安装 SSH：<br><img src="https://s1.ax1x.com/2020/04/24/JDjD4s.png" alt="enter description here"><br>如此即为已安装， 然后输入 ssh-keygen -t rsa 命令，表示我们指定 RSA 算法生成密钥，然后敲四次回车键，之后就就会在C:/Users/ASUS/.ssh下生成两个文件（win10），分别为秘钥 id_rsa 和公钥 id_rsa.pub.<br>输入下面三条命令，可查看到公钥文件里的内容。</p>
+<blockquote>
+<p>$ cd ~/.ssh<br>$ ls<br>$ cat id_rsa.pub</p>
+</blockquote>
+<p>点开github右上角头像中的“Settings”，再点击 SSH and GPG keys。点击绿色的“ New SSH key”新建，将公钥右键复制粘贴到新建的ssh key中（标题空着无所谓），点击“add this key”保存。<br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:git@github.com">git@github.com</a> 进行检验。第一次会出现：<br><img src="https://s1.ax1x.com/2020/04/24/JDzZ3n.jpg" alt="enter description here"><br>填“yes”，出现以下情形即为成功了。<br><img src="https://s1.ax1x.com/2020/04/24/JDz0ED.png" alt="enter description here"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/24/%E7%94%B5%E8%84%91%E7%99%BD%E7%97%B4%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+<span id="busuanzi_container_page_pv">
+   本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+  
     <article id="post-“拓宽生命的宽度”究竟有什么用？？" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -286,7 +375,12 @@
 </ol>
 <h1 id="开始吧！"><a href="#开始吧！" class="headerlink" title="开始吧！"></a>开始吧！</h1><hr>
 <h3 id="1-GitHub的注册与git安装"><a href="#1-GitHub的注册与git安装" class="headerlink" title="1.GitHub的注册与git安装"></a>1.GitHub的注册与git安装</h3><p>首先登陆GitHub官网<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击绿绿的那个“sign up for GitHub”，输入信息，选择免费的plan。出现问卷，不想填直接点下面的“skip this step”跳过就好了。（英文看不懂就用谷歌浏览器右键自动翻译，超方便）<br>最后出现以下页面，就可以开始邮箱验证了。<br><img src="https://s1.ax1x.com/2020/04/11/GHGPOS.jpg" alt="enter description here"><br>然后进入qq邮箱里的验证邮件，点击蓝色的Verify email address按钮,又进入了GitHub登录页面（网速卡等一会就好了）。登录后又进入验证码界面，输入验证码（已经发到你的qq邮箱里了）。随后进入创建新仓库的界面就意味着已经注册成功了。<br><br><br>接下来安装git，进入git官网<a href="https://git-scm.com/" target="_blank" rel="noopener">git官网</a>，点击download下载，选择合适的系统，开始下载。下载成功后打开安装包，点next，然后选择安装位置进入下一步，勾选第一二行，表示在桌面创建快捷方式。其余保持默认。<br><img src="https://s1.ax1x.com/2020/04/11/GHUts0.jpg" alt="enter description here"><br>然后一路默认下一步，直至安装完成。<br><img src="https://s1.ax1x.com/2020/04/11/GHaNpd.png" alt="enter description here"><br>右键能出现Git Bash here即是安装成功了。在不同目录点击下右键-git bash here进入的是不同目录的配置（和Kali Linux里的终端是一个道理），之后做的时候一定要看好目录哦。</p>
-<h3 id="2-git与GitHub的绑定以及文件提交法"><a href="#2-git与GitHub的绑定以及文件提交法" class="headerlink" title="2. git与GitHub的绑定以及文件提交法"></a>2. git与GitHub的绑定以及文件提交法</h3>
+<h3 id="2-git与GitHub的绑定以及文件提交法"><a href="#2-git与GitHub的绑定以及文件提交法" class="headerlink" title="2. git与GitHub的绑定以及文件提交法"></a>2. git与GitHub的绑定以及文件提交法</h3><p>打开gitbash输入 ssh 命令，查看本机是否安装 SSH：<br><img src="https://s1.ax1x.com/2020/04/24/JDjD4s.png" alt="enter description here"><br>如此即为已安装， 然后输入 ssh-keygen -t rsa 命令，表示我们指定 RSA 算法生成密钥，然后敲四次回车键，之后就就会在C:/Users/ASUS/.ssh下生成两个文件（win10），分别为秘钥 id_rsa 和公钥 id_rsa.pub.<br>输入下面三条命令，可查看到公钥文件里的内容。</p>
+<blockquote>
+<p>$ cd ~/.ssh<br>$ ls<br>$ cat id_rsa.pub</p>
+</blockquote>
+<p>点开github右上角头像中的“Settings”，再点击 SSH and GPG keys。点击绿色的“ New SSH key”新建，将公钥右键复制粘贴到新建的ssh key中（标题空着无所谓），点击“add this key”保存。<br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:git@github.com">git@github.com</a> 进行检验。第一次会出现：<br><img src="https://s1.ax1x.com/2020/04/24/JDzZ3n.jpg" alt="enter description here"><br>填“yes”，出现以下情形即为成功了。<br><img src="https://s1.ax1x.com/2020/04/24/JDz0ED.png" alt="enter description here"></p>
+
       
 
       
