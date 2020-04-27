@@ -1459,8 +1459,8 @@ canvas:not(#ribbon-canvas),
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #0f111a;
-  color: #8f93a2;
+  background: #292d3e;
+  color: #a6accd;
   line-height: 20px;
 }
 .code-area-wrap {
@@ -1509,7 +1509,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #8f93a2;
+  color: #a6accd;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1523,7 +1523,7 @@ blockquote footer cite:before {
 }
 #article-container figure.highlight .line::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container figure.highlight .line.marked {
   background-color: rgba(113,124,180,0.314);
@@ -1542,7 +1542,7 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption {
   zoom: 1;
   padding: 0.3rem 0 0.1rem 0.7rem;
-  color: #8f93a2;
+  color: #a6accd;
   font-size: 1em;
   line-height: 1em;
 }
@@ -1557,23 +1557,23 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption a {
   float: right;
   padding-right: 10px;
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container figure.highlight figcaption a:hover {
-  border-bottom-color: #8f93a2;
+  border-bottom-color: #a6accd;
 }
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #0f111a;
-  color: rgba(59,63,81,0.502);
+  background-color: #292d3e;
+  color: #3a3f58;
   text-align: right;
 }
 #article-container figure.highlight .code pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   width: 100%;
-  background-color: #0f111a;
+  background-color: #292d3e;
 }
 #article-container figure.highlight .line {
   height: 1rem;
@@ -1603,11 +1603,11 @@ blockquote footer cite:before {
   color: #c792ea;
 }
 #article-container pre .comment {
-  color: #464b5d;
+  color: #676e95;
 }
 #article-container pre .comment::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .variable,
 #article-container pre .attribute,
@@ -1636,14 +1636,14 @@ blockquote footer cite:before {
 #article-container pre .css .class::selection,
 #article-container pre .css .pseudo::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .tag {
   color: #89ddff;
 }
 #article-container pre .tag::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .number,
 #article-container pre .preprocessor,
@@ -1660,14 +1660,14 @@ blockquote footer cite:before {
 #article-container pre .constant::selection,
 #article-container pre .command::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .built_in {
   color: #ffcb6b;
 }
 #article-container pre .built_in::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .ruby .class .title,
 #article-container pre .css .rules .attribute,
@@ -1694,7 +1694,7 @@ blockquote footer cite:before {
 #article-container pre .number::selection,
 #article-container pre .formula::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .keyword,
 #article-container pre .title,
@@ -1705,7 +1705,7 @@ blockquote footer cite:before {
 #article-container pre .title::selection,
 #article-container pre .css .hexcolor::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .function,
 #article-container pre .python .decorator,
@@ -1726,7 +1726,7 @@ blockquote footer cite:before {
 #article-container pre .javascript .title::selection,
 #article-container pre .coffeescript .title::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 #article-container pre .tag .attr,
 #article-container pre .javascript .function {
@@ -1735,15 +1735,15 @@ blockquote footer cite:before {
 #article-container pre .tag .attr::selection,
 #article-container pre .javascript .function::selection {
   background: rgba(113,124,180,0.314);
-  color: #8f93a2;
+  color: #a6accd;
 }
 .highlight-tools {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 1.4rem;
-  background: #06060a;
-  color: #8f93a2;
+  background: #1f222f;
+  color: #a6accd;
   font-size: 14px;
 }
 #aside_content {
@@ -3771,7 +3771,7 @@ img {
   top: 0;
   z-index: 1;
   padding: 7px 10px;
-  color: #8f93a2;
+  color: #a6accd;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3803,7 +3803,7 @@ img {
   position: absolute;
   left: 15px;
   z-index: 1;
-  color: #8f93a2;
+  color: #a6accd;
   text-transform: capitalize;
   font-weight: bold;
   font-size: 0.8rem;
@@ -3815,7 +3815,7 @@ img {
   top: 0;
   right: 0;
   z-index: 1;
-  background: #06060a;
+  background: #1f222f;
   color: #89ddff;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
